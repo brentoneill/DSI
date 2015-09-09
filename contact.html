@@ -42,13 +42,47 @@
           </a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
+          <ul class="nav navbar-nav navbar-right clearfix">
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">ABOUT US</a></li>
-            <li><a href="product_color.html">Products</a></li>
-            <li><a href="support_order_supplies.html">Support</a></li>
+            <li><a href="about.html">About</a></li>
+
+<!--             <li class="dropdown">
+  <a href="about.html" data-toggle="dropdown" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">About Us<span class="caret"></span></a>
+  <ul class="dropdown-menu">
+    <li><a href="about_team.html">Our Team</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="about_careers.html">Careers</a></li>
+  </ul>
+</li> -->
+            <li class="dropdown">
+              <a href="product_color.html" data-toggle="dropdown" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Products<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="product_color.html">Color</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="product_black_and_white.html">Black & White</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="product_compact.html">Compact</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="product_print_production.html">Print Production</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="product_wide_format.html">Wide Format</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="product_color.html" data-toggle="dropdown" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Support<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="support_order_supplies.html">Order Supplies</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="support_request_support.html">Request Support</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="support_log_meter_readings.html">Log Meter Reading</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="support_driver_download.html">Driver Downloads</a></li>
+              </ul>
+            </li>
             <li><a href="contact.html">Contact Us</a></li>
           </ul>
+
         </div><!--/.nav-collapse -->
       </div><!--/.container-fluid -->
     </nav>
@@ -60,7 +94,7 @@
     <div class="pageTitle">
       <div class="container">
         <div class="row">
-            <span class="page-heading animated slideInLeft">Contact us</span>
+            <span class="page-heading animated slideInLeft">Contact</span>
         </div>
       </div>
     </div>
@@ -69,20 +103,23 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8 col-text">
-          <h2>locations</h2>
-          <p>Business Hours: Monday - Friday, 8:00 AM - 5:00 PM ET</p>
-          <div id="map1"></div>
-          <p><strong>114 S Wineow Street<br>Cumberland, MD 21502</strong></p>
-          <p>Phone: 301-777-7999<br>Fax: 301-777-7906<br>Toll Free: 800-726-7999<br>sales@digitaldsi.com<br>service@digitaldsi.com<br>supplies@digitaldsi.com</p>
-          <div class="spacer-40"></div>
-          <div id="map2"></div>
-          <p><strong>10228 Governor Lane Blvd<br>Williamsport, MD 21795</strong></p>
-          <p>Phone: 301-791-7999<br>Fax: 301-745-8828<br>Toll Free: 888-530-7999<br>sales@digitaldsi.com<br>service@digitaldsi.com<br>supplies@digitaldsi.com</p>
-          <div class="spacer-40"></div>
-          <h2>departments</h2>
-          <p><strong>Service:</strong><br>Phone: 301-777-5727<br>Toll Free: 888-777-5727<br>Fax: 301-777-8098<br>Email: service@digitaldsi.com</p>
-          <p><strong>Sales:</strong><br>Phone: 301-777-7999<br>Toll Free: 800-726-7999<br>Fax: 301-777-7906<br>Email: sales@digitaldsi.com</p>
-          <p><strong>Supplies:</strong><br>Phone: 301-777-5727<br>Toll Free: 888-777-5727<br>Fax: 301-777-8098<br>Email: supplies@digitaldsi.com</p>
+            <h2>locations</h2>
+            <p>Business Hours: Monday - Friday, 8:00 AM - 5:00 PM ET</p>
+            <div class="col-md-5">
+              <p><strong>114 S Wineow Street<br>Cumberland, MD 21502</strong></p>
+              <p>Phone: 301-777-7999<br>Fax: 301-777-7906<br>Toll Free: 800-726-7999<br>sales@digitaldsi.com<br>service@digitaldsi.com<br>supplies@digitaldsi.com</p>
+            </div>
+            <div id="map1" class="col-md-7"></div>
+            <div class="spacer-40"></div>
+            <div class="col-md-5">
+              <p><strong>10228 Governor Lane Blvd<br>Williamsport, MD 21795</strong></p>
+              <p>Phone: 301-791-7999<br>Fax: 301-745-8828<br>Toll Free: 888-530-7999<br>sales@digitaldsi.com<br>service@digitaldsi.com<br>supplies@digitaldsi.com</p>
+            </div>
+            <div id="map2" class="col-md-7"></div>
+            <h2>departments</h2>
+            <p><strong>Service:</strong><br>Phone: 301-777-5727<br>Toll Free: 888-777-5727<br>Fax: 301-777-8098<br>Email: service@digitaldsi.com</p>
+            <p><strong>Sales:</strong><br>Phone: 301-777-7999<br>Toll Free: 800-726-7999<br>Fax: 301-777-7906<br>Email: sales@digitaldsi.com</p>
+            <p><strong>Supplies:</strong><br>Phone: 301-777-5727<br>Toll Free: 888-777-5727<br>Fax: 301-777-8098<br>Email: supplies@digitaldsi.com</p>
         </div>
         <div class="col-md-4">
             <div class="sidebar-module panel panel-default well pal">
@@ -110,7 +147,7 @@
         <a href="index.html"><img class="img img-thumbnail img-circle" src="assets/images/logo.png" alt="DSI"></a>
     </div>
 
-    <!-- FOOTER -->
+    <!-- footer -->
     <footer>
       <div class="container">
         <div class="row row-footer">
@@ -127,8 +164,8 @@
           <div class="col-md-4">
             <h2>Other Pages</h2>
             <ul class="footer-links">
-              <li><i class="fa fa-fw fa-chevron-right"></i> <a href="about_careers.html">Careers</a></li>
-              <li><i class="fa fa-fw fa-chevron-right"></i> <a href="about_team.html">Our Team</a></li>
+  <!--             <li><i class="fa fa-fw fa-chevron-right"></i> <a href="about_careers.html">Careers</a></li>
+  <li><i class="fa fa-fw fa-chevron-right"></i> <a href="about_team.html">Our Team</a></li> -->
               <li><i class="fa fa-fw fa-chevron-right"></i> <a href="support_order_supplies.html">Order Supplies</a></li>
               <li><i class="fa fa-fw fa-chevron-right"></i> <a href="support_request_support.html">Request Support</a></li>
               <li><i class="fa fa-fw fa-chevron-right"></i> <a href="support_log_meter_readings.html">Submit Log Meter Readings</a></li>
@@ -138,14 +175,16 @@
           <div class="col-md-3">
             <h2>Get in touch!</h2>
             <span class="address-line">
-              <i class="fa fa-fw fa-phone"></i> <a href="tel:555-555-5555">770-546-4321</a>
+              <i class="fa fa-fw fa-phone"></i> <a href="tel:800-726-7999">(800) 726-7999</a>
             </span>
             <span class="address-line">
-              <i class="fa fa-fw fa-envelope"></i> <a href="mailto:info@DSI.com">info@DSI.com</a>
+              <i class="fa fa-fw fa-envelope"></i> <a href="mailto:service@digitaldsi.com">service@digitaldsi.com</a>
             </span>
             <span class="address-line">
-              <i class="fa fa-fw fa-twitter"></i> <a href="http://www.pigeongram.com/" target="_blank">Carrier Pigeon</a>
-              </i>
+              <i class="fa fa-fw fa-envelope"></i> <a href="mailto:supplies@digitaldsi.com">supplies@digitaldsi.com</a>
+            </span>
+            <span class="address-line">
+              <i class="fa fa-fw fa-envelope"></i> <a href="mailto:sales@digitaldsi.com">sales@digitaldsi.com</a>
             </span>
           </div>
         </div>
@@ -153,7 +192,7 @@
     </footer>
     <div class="subfooter">
       <div class="container">
-        <p class="text-center">© Copyright 2015 Document Solutions, Inc. (555) 555-5555 All rights reserved. Website done by <a href="http://courtlandgaba.com" target="_blank">Courtland Gaba</a> and <a href="http://brentoneill.github.io" target="_blank">Brent O'Neil</a></p>
+        <p class="text-center">© Copyright 2015 Document Solutions, Inc. (800) 726-7999 All rights reserved. Website done by <a href="http://courtlandgaba.com" target="_blank">Courtland Gaba</a> and <a href="http://brentoneill.github.io" target="_blank">Brent O'Neil</a></p>
       </div>
     </div>
 
@@ -166,6 +205,7 @@
 
   <script src="assets/js/main.js"></script>
   <script src="assets/js/map.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?signed_in=true&callback=initMap"></script>
 
 </body>
 </html>

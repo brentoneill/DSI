@@ -76,18 +76,17 @@ ul.product-items {
     padding-bottom: 30px;
     border-bottom: 3px solid #EEE;
     .image {
-      height: 220px;
+      height: auto;
+      width: auto;
       background-position: center center;
       background-repeat: no-repeat;
       -webkit-background-size: contain;
       -moz-background-size: contain;
       background-size: contain;
-      width: auto;
     }
     .third {
       float: left;
       width: 30.6666%;
-      min-height: 200px;
       margin-right: 4%;
     }
     .third.last {

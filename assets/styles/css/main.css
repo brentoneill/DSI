@@ -87,15 +87,14 @@ ul.product-items {
     padding-bottom: 30px;
     border-bottom: 3px solid #EEE; }
     ul.product-items li .image {
-      height: 220px;
+      height: auto;
+      width: auto;
       background-position: center center;
       background-repeat: no-repeat;
-      background-size: contain;
-      width: auto; }
+      background-size: contain; }
     ul.product-items li .third {
       float: left;
       width: 30.6666%;
-      min-height: 200px;
       margin-right: 4%; }
     ul.product-items li .third.last {
       margin-right: 0px; }
@@ -850,9 +849,7 @@ img {
     margin-right: 20px; }
 
 #map1, #map2, #map3, #map4 {
-  height: 270px;
-  width: 60%;
-  float: right; }
+  height: 270px; }
 
 ul.supply-nav {
   margin: 0px 0px 90px 0px;
