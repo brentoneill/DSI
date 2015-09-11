@@ -961,7 +961,9 @@ form {
   .phone-button-wrapper {
     display: inline-block; }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
-    color: #2B4592; } }
+    color: #2B4592; }
+  .page-body {
+    padding-top: 20px; } }
 
 .display-590 {
   display: none; }
