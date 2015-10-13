@@ -15,7 +15,7 @@ $(document).ready(function() {
     Pace.on('done', function(){
         $('.cover').fadeOut(2000);
     });
-  }
+  };
 
   // WOW.js configuration
   var wow = new WOW(
@@ -32,7 +32,6 @@ $(document).ready(function() {
   // Initialize wow.js for animations on scrolls
   wow.init();
 
-
   // Handles scroll on home page
   $('body').on('click', '[data-scroll-target]', function(e){
     e.preventDefault();
@@ -47,7 +46,7 @@ $(document).ready(function() {
 
   // Set up nav controls on right to detect scroll position
   $(window).scroll(function(e){
-    var scrollPos = $(document).scrollTop() + 26;
+    var scrollPos = $(document).scrollTop() + 46;
     // Handles the 'spy' functionality of right side dot nav
     $('.nav-controls-right li').each(function () {
         var currLink = $(this);
@@ -59,8 +58,50 @@ $(document).ready(function() {
             currLink.removeClass("active");
         }
     });
+
+    // Hides menu when scrolling down, shows on scroll up
+    didScroll = true;
+
   }); // End window scroll event
 
 
+  var didScroll;
+  var lastScrollTop = 0;
+  var delta = 5;
+  var navbarHeight = $('.navbar-not-home').outerHeight();
+
+  // run hasScrolled() and reset didScroll status
+  setInterval(function() {
+    if (didScroll) {
+      hasScrolled();
+      didScroll = false;
+    }
+  }, 250);
+
+  function hasScrolled() {
+    var st = $(window).scrollTop();
+
+    console.log(lastScrollTop);
+
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+      console.log('scrolling down');
+      // Scroll Down
+      $('.navbar-not-home').removeClass('nav-down').addClass('nav-up');
+    } else {
+      console.log('scrolling up');
+      // Scroll Up
+      if(st + $(window).height() < $(document).height()) {
+        console.log('add');
+          $('.navbar-not-home').removeClass('nav-up').addClass('nav-down');
+      }
+    }
+    lastScrollTop = st;
+  }
 
 });
